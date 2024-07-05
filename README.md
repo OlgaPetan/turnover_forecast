@@ -6,4 +6,4 @@ A __time series forecast__ of revenue by store and department using __XGBoost__.
    3.1. For the earliest week in inference, turnover_1_week_before through turnover_8_week_before will be taken from the training dataset if there is data for that period. The model will return projections for the current week.
    3.2. The projections for the first week will become turnover_1_week_before for the second earliest week, while all other columns will take values from the training dataset. The model will return projections for the current week.
    This process will continue until we have a date in the validation set that exhausts the need to get values for the previous weeks from the training data.
-4. __ARIMA models__ and residual plots for the ARIMA models are shown for comparison.
+4. __ARIMA model__ and residual plots for it are shown for comparison.
